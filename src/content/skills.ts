@@ -6,11 +6,11 @@ export const metadata = {
 };
 
 export const categoryNames: CategoryNames = {
-  frontend: 'JavaScript 📜',
-  backend: 'Datastore 💾',
-  tools: 'Infrastructure 🏗️',
-  languages: 'Python 🐍',
-  design: 'Design 🎨'
+  frontend: 'JavaScript',
+  backend: 'Datastore',
+  tools: 'Infrastructure',
+  languages: 'Python',
+  design: 'Design'
 };
 
 // Define base skills with all properties
