@@ -7,9 +7,9 @@ interface SkillCardProps {
 
 export default function SkillCard({ skill }: SkillCardProps) {
     return (
-      <div className="h-28 w-28 flex flex-col justify-around rounded-lg bg-white py-2 
-        transition-all duration-200 hover:-translate-y-1">
-        <div className="relative w-8 h-8 mx-auto">
+      <div className="md:h-28 md:w-28 flex flex-col justify-around rounded-lg bg-white odd:bg-gray-300 md:bg-white md:odd:bg-white py-2 px-3 md:px-0 
+        transition-all duration-200 hover:translate-x-1">
+        <div className="relative w-8 h-8 mx-auto hidden md:block">
           <Image 
             className="w-full h-full object-contain !top-[-25px]" 
             src={skill.image} 

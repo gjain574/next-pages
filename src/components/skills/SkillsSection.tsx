@@ -12,11 +12,11 @@ export default function SkillsSection({ category }: SkillsSectionProps) {
   
   return (
     <>
-      <h3 className="text-body font-medium text-gray-700 mb-2 hover:bg-gray-100 inline-block py-1 transition-colors cursor-default">
+      <h3 className="text-medium md:text-body font-medium text-gray-700 mb-1 md:mb-2 hover:bg-gray-100 inline-block py-1 transition-colors cursor-default">
         {title}
       </h3>
-      <section className="mb-4 bg-white rounded-lg shadow-md p-2 max-w-2xl">
-        <div className="flex flex-row space-x-2 overflow-x-auto px-3">
+      <section className="mb-2 md:mb-4 rounded-lg px-0 py-1 md:p-2 max-w-2xl">
+        <div className="flex flex-row flex-wrap gap-4">
         {skills.map(skill => (
           <SkillCard key={skill.name} skill={skill} />
         ))}

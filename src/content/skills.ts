@@ -53,7 +53,7 @@ export const skills: Skill[] = [
   {
     name: "TypeScript",
     image: "https://cdn.iconscout.com/icon/free/png-512/typescript-1174965.png",
-    category: 'languages',
+    category: 'frontend',
     icon: '🔷',
     description: 'Type-safe JavaScript development'
   },
