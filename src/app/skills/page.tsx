@@ -16,7 +16,7 @@ export default function SkillsPage() {
             Home
             </a>
             <span className="text-gray-darker">/</span>
-            <span className="text-gray-darker truncate max-w-[120px] sm:max-w-[200px] inline-block">🖋 &nbsp;Skills</span>
+            <span className="text-gray-darker truncate max-w-[120px] sm:max-w-[200px] inline-block">💪 &nbsp;Skills</span>
         </nav>
 
         <h1 className="text-2xl sm:text-title font-semibold tracking-tight text-gray-darker mb-8">
