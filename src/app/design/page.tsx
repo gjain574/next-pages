@@ -9,7 +9,7 @@ export const metadata = {
 export default function DesignPage() {
   return (
     <main className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-8">Design</h1>
+      <h1 className="text-4xl font-normal mb-4">Design</h1>
       <DesignGrid projects={designProjects} />
     </main>
   );
