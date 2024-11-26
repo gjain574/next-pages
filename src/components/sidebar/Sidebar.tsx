@@ -46,7 +46,7 @@ const Sidebar = () => {
       { href: "/", text: "About me" },
       { href: "/blog", text: "Articles" },
       { href: "/skills", text: "My Skills" },
-      { href: "/portfolio", text: "Portfolio" },
+      { href: "/projects", text: "Projects" },
       { href: "/design", text: "Design" }
     ];
   
