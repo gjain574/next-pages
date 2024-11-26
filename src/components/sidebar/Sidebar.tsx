@@ -37,7 +37,12 @@ const Sidebar = () => {
     {
       href: "https://www.producthunt.com/@Gautam__Jain",
       icon: (
-        <path d="M13.6 13.4675L7.2 7.0675V13.4675H13.6ZM16.8 10.2675C16.8 13.8675 13.8857 16.8675 10.2 16.8675C6.51429 16.8675 3.6 13.8675 3.6 10.2675C3.6 6.6675 6.51429 3.6675 10.2 3.6675C13.8857 3.6675 16.8 6.6675 16.8 10.2675ZM20.4 10.2675C20.4 4.66754 15.8571 0.267542 10.2 0.267542C4.54286 0.267542 0 4.66754 0 10.2675C0 15.8675 4.54286 20.2675 10.2 20.2675C15.8571 20.2675 20.4 15.8675 20.4 10.2675Z" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 40 40" className="w-6 h-6">
+          <g fill="black" fillRule="evenodd">
+            <path fill="#black" d="M40 20c0 11.046-8.954 20-20 20S0 31.046 0 20 8.954 0 20 0s20 8.954 20 20"></path>
+            <path fill="#fff" d="M22.667 20H17v-6h5.667a3 3 0 0 1 0 6m0-10H13v20h4v-6h5.667a7 7 0 1 0 0-14"></path>
+          </g>
+        </svg>
       ),
       color: "black",
       title: "x"
@@ -88,7 +93,7 @@ const Sidebar = () => {
                   />
                 </Link>
                 
-                <div className="flex gap-4 mb-6">
+                <div className="flex gap-4 mb-4 justify-center items-center">
                   {socialLinks.map((link, i) => (
                     <a
                       key={i}
