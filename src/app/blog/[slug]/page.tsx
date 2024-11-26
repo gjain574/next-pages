@@ -20,6 +20,15 @@ export default async function BlogPost({ params }: BlogPostProps) {
 
   return (
     <article className="max-w-4xl mx-auto px-6 py-16 antialiased min-h-screen">
+      <nav className="flex items-center space-x-2 mb-8 text-sm sticky top-0 backdrop-blur-sm py-4 z-10">
+        <a href="/blog" className="bg-gray-dark px-2 py-1 rounded-lg text-gray-light truncate max-w-[200px] inline-block hover:bg-gray-darker hover:text-gray-light hover:shadow-md transition-all duration-200 font-semibold">
+        🖋️ &nbsp;
+          Blog
+        </a>
+        <span className="text-gray-dark">/</span>
+        <span className="text-gray-darker truncate max-w-[200px] inline-block">{post.title}</span>
+      </nav>
+
       <h1 className="text-title font-semibold tracking-tight text-gray-darker mb-3">
         {post.title}
       </h1>
