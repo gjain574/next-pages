@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { PortfolioProject } from "@/types/portfolio";
+import { Project } from "@/types/project";
 
-interface PortfolioCardProps {
-  project: PortfolioProject;
+interface ProjectCardProps {
+  project: Project;
 }
 
-export default function PortfolioCard({ project }: PortfolioCardProps) {
+export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-100/80 rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.08)] 
       hover:shadow-[0_8px_16px_rgba(0,0,0,0.08)] hover:border-gray-200 transition-all duration-200 hover:-translate-y-1 overflow-hidden
@@ -32,7 +32,7 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
         <h3 className="text-lg sm:text-xl font-normal text-gray-700 mb-2 hover:text-gray-800 transition-colors">
           {project.title}
         </h3>
-        <p className="text-gray-600 text-sm mb-4 leading-relaxed line-clamp-2">
+        <p className="text-gray-600 text-sm mb-4 leading-relaxed line-clamp-2 min-h-[3rem]">
           {project.description}
         </p>
         

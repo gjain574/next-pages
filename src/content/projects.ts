@@ -1,6 +1,6 @@
-import { PortfolioProject } from '@/types/portfolio';
+import { Project } from '@/types/project';
 
-export const portfolioProjects: PortfolioProject[] = [
+export const projects: Project[] = [
     {
         id: 'project-0',
         title: 'LinkedIn AI Reply',
