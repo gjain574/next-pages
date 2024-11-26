@@ -17,7 +17,7 @@ export const categoryNames: CategoryNames = {
 export const skills: Skill[] = [
   {
     name: "Node",
-    image: "https://nodejs.org/static/logos/nodejsLight.svg",
+    image: "https://nodejs.org/static/logos/nodejsDark.svg",
     category: 'frontend',
     icon: '🟢',
     description: 'Server-side JavaScript runtime'
@@ -38,14 +38,14 @@ export const skills: Skill[] = [
   },
   {
     name: "Tailwind CSS",
-    image: "/abc_files/tailwind-css_136619.png",
+    image: "https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg",
     category: 'frontend',
     icon: '🎨',
     description: 'Utility-first CSS framework'
   },
   {
     name: "Nunjucks",
-    image: "/abc_files/Microsoft.VisualStudio.Services.Icons.png",
+    image: "https://mozilla.github.io/nunjucks/img/favicon.png",
     category: 'frontend',
     icon: '📝',
     description: 'Templating engine for JavaScript'

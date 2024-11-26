@@ -12,7 +12,7 @@ export default function SkillsSection({ category }: SkillsSectionProps) {
   
   return (
     <section className="mb-12">
-      <h4 className="text-2xl font-semibold mb-6">{title}</h4>
+      <h4 className="text-xl font-normal mb-6">{title}</h4>
       <div className="flex flex-wrap gap-4">
         {skills.map(skill => (
           <SkillCard key={skill.name} skill={skill} />
