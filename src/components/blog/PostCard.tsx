@@ -13,10 +13,10 @@ export default function PostCard({ post }: PostCardProps) {
         className="block"
       >
         <div className="flex items-center justify-between mb-2">
-          <h3 className="text-h3 font-bold hover:text-blue-600">
-            {post.title}
+          <h3 className="text-h4 md:text-h3 font-bold hover:text-blue-600">
+          🖋️ &nbsp;{post.title}
           </h3>
-          <div className="text-gray-600 text-sm flex items-center">
+          <div className="text-gray-600 text-sm flex items-center hidden md:flex">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 inline-block text-gray-dark mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
@@ -27,7 +27,7 @@ export default function PostCard({ post }: PostCardProps) {
             })}
           </div>
         </div>
-        <p className="text-body text-gray-700">
+        <p className="text-small md:text-body text-gray-700">
           {post.excerpt}
         </p>
       </Link>

@@ -5,7 +5,7 @@ export default function BlogIndex() {
   const posts = getAllPosts().map(({ content, ...rest }) => rest)
 
   return (
-    <div className="max-w-4xl pl-2 sm:pl-6 py-8 sm:py-16 antialiased min-h-screen">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-16 antialiased min-h-screen">
       <nav className="flex items-center space-x-2 mb-6 sm:mb-8 text-xs sm:text-sm sticky top-0 backdrop-blur-sm py-4 z-10">
         <a href="/" className="bg-gray-dark px-2 py-1 rounded-lg text-gray-light truncate max-w-[120px] sm:max-w-[200px] inline-block font-semibold">
           Home

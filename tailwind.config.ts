@@ -66,6 +66,7 @@ const config: Config = {
         'h2': ['1.5rem', { lineHeight: '1.3', letterSpacing: '-0.01em' }],
         'h3': ['1.25rem', { lineHeight: '1.4', letterSpacing: '-0.01em' }],
         'body': ['1rem', { lineHeight: '1.5' }],
+        'medium': ['0.9375rem', { lineHeight: '1.5' }],
         'small': ['0.875rem', { lineHeight: '1.5' }],
       },
     },
