@@ -6,8 +6,7 @@ export interface PortfolioProject {
   imageUrl: string;
   liveUrl?: string;
   githubUrl?: string;
-  youtubeUrl?: string;
-  highlights: string[];
+  videoUrl?: string;
   date: string;
   status: 'Online' | 'Offline';
 } 
