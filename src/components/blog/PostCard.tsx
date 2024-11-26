@@ -7,13 +7,13 @@ interface PostCardProps {
 
 export default function PostCard({ post }: PostCardProps) {
   return (
-    <article className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+    <article className="p-4 md:p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
       <Link 
         href={`/blog/${post.slug}`}
         className="block"
       >
         <div className="flex items-center justify-between mb-2">
-          <h3 className="text-h4 md:text-h3 font-bold hover:text-blue-600">
+          <h3 className="text-body md:text-h3 font-bold hover:text-blue-600">
           🖋️ &nbsp;{post.title}
           </h3>
           <div className="text-gray-600 text-sm flex items-center hidden md:flex">

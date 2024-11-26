@@ -1,101 +1,62 @@
-import Image from "next/image";
+import Sidebar from "@/components/sidebar/Sidebar";
+import { getAllPosts } from '@/services/mdx';
+import PostCard from '@/components/blog/PostCard';
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  // Get latest 3 posts
+  const latestPosts = getAllPosts()
+    .map(({ content, ...rest }) => rest)
+    .slice(0, 3);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+  return (
+    <main className="max-w-4xl px-4 sm:px-6 py-8 sm:py-16 antialiased min-h-screen">
+      <nav className="flex items-center space-x-2 mb-6 sm:mb-8 text-xs sm:text-sm sticky top-0 backdrop-blur-sm py-4 z-10">
+          <a href="/" className="bg-gray-dark px-2 py-1 rounded-lg text-gray-light truncate max-w-[120px] sm:max-w-[200px] inline-block font-semibold">
+          Home
           </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <span className="text-gray-darker">/</span>
+          <span className="text-gray-darker truncate max-w-[120px] sm:max-w-[200px] inline-block">👋 &nbsp;About Me</span>
+      </nav>
+
+      <h1 className="text-2xl sm:text-title font-semibold tracking-tight text-gray-darker mb-8">
+        About Me
+      </h1>
+      <div className="prose prose-sm sm:prose-lg max-w-none mb-8 prose-p:text-gray-darker prose-p:leading-relaxed prose-p:text-sm sm:prose-p:text-body">
+        <p>
+          Hi, I&apos;m Gautam Jain, a full-stack developer and UI/UX designer who loves building products.
+          While I primarily work with Node.js and React, I believe in choosing the right tools for each
+          unique challenge. I enjoy crafting solutions that combine robust functionality with
+          thoughtful design.
+        </p>
+      </div>
+      
+      <div className="my-12">
+        <h3 className="text-body md:text-h3 font-semibold md:font-normal mb-3 md:mb-4">
+          Current Focus
+        </h3>
+        <p className="text-sm md:text-body text-gray-800 leading-relaxed bg-white p-4 md:p-6 rounded-lg shadow-sm">
+          Currently focused on building Chrome extensions and exploring the browser extension ecosystem. Learning and sharing my journey in public.
+        </p>
+      </div>
+
+      <div className="flex justify-between items-center mb-3 md:mb-4">
+        <h3 className="text-body md:text-h3 font-semibold md:font-normal">
+          Latest Articles
+        </h3>
+        <a 
+            href="/blog" 
+            className="text-sm md:text-body text-blue-600 hover:text-blue-700 transition-colors flex items-center space-x-1 group"
           >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+            <span>View all posts</span>
+            <span className="group-hover:translate-x-0.5 transition-transform">→</span>
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+
+      <div className="grid gap-6">
+        {latestPosts.map((post) => (
+          <PostCard key={post.slug} post={post} />
+        ))}
+      </div>
+    </main>
   );
 }
