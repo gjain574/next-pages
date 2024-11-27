@@ -2,7 +2,6 @@
 title: "The Reaction Trap"
 date: "2024-11-22"
 excerpt: "Why Chasing Every Wind Won't Sail Your Boat"
-tags: ["nextjs", "react", "markdown"]
 ---
 
 In our daily lives, we constantly interact with the world around us, which creates an interesting challenge. Our minds, always ready to respond to what's happening, often get caught up in a cycle of reactions - this can hurt both our emotional balance and our ability to make good decisions. We basically "hook" our "actions" to every external "event" or "stimulus".
