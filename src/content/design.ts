@@ -2,15 +2,12 @@ import { DesignProject } from '@/types/design';
 
 export const designProjects: DesignProject[] = [
     {
-      id: '1',
-      title: 'Brand Identity System',
-      description: 'Complete visual identity design including logo, color palette, and typography guidelines.',
-      image: '/images/design/brand-identity.jpg',
-      category: 'Branding',
-      tools: ['Figma', 'Illustrator', 'Photoshop']
+      title: 'StockViews.AI',
+      description: 'Stock Views from Top Influencers Summarized by AI.',
+      image: '/images/design/stock_views_mockup.jpg',
+      category: 'Mockup'
     },
     {
-      id: '2',
       title: 'Mobile App UI Design',
       description: 'User interface design for a fitness tracking mobile application.',
       image: '/images/design/mobile-app.jpg',
@@ -18,7 +15,6 @@ export const designProjects: DesignProject[] = [
       tools: ['Figma', 'Sketch', 'Protopie']
     },
     {
-      id: '3',
       title: 'Website Redesign',
       description: 'Modern redesign of an e-commerce platform focusing on user experience.',
       image: '/images/design/website.jpg',
