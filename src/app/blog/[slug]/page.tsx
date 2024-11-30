@@ -4,9 +4,9 @@ import BlogContent from '@/components/blog/BlogContent'
 import Link from 'next/link'
 
 interface BlogPostProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export default async function BlogPost({ params }: BlogPostProps) {
