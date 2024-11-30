@@ -1,6 +1,6 @@
 import { getAllPosts, getPostBySlug } from '@/services/mdx'
-import { marked } from 'marked'
 import { notFound } from 'next/navigation'
+import BlogContent from '@/components/blog/BlogContent'
 
 interface BlogPostProps {
   params: {
@@ -15,8 +15,6 @@ export default async function BlogPost({ params }: BlogPostProps) {
   if (!post) {
     notFound()
   }
-
-  const htmlContent = marked(post.content)
 
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-16 antialiased min-h-screen">
@@ -38,23 +36,8 @@ export default async function BlogPost({ params }: BlogPostProps) {
           year: 'numeric'
         })}
       </div>
-      <div 
-        className="prose prose-sm sm:prose-lg max-w-none
-          prose-headings:font-semibold prose-headings:tracking-tight prose-headings:text-gray-darker
-          prose-h1:text-xl sm:prose-h1:text-h1 
-          prose-h2:text-lg sm:prose-h2:text-h2 
-          prose-h3:text-base sm:prose-h3:text-h3
-          prose-p:text-gray-darker prose-p:leading-relaxed prose-p:text-sm sm:prose-p:text-body
-          prose-a:text-blue prose-a:no-underline hover:prose-a:underline
-          prose-strong:font-semibold prose-strong:text-gray-darker
-          prose-ul:my-4 sm:prose-ul:my-6 prose-li:my-1 sm:prose-li:my-2 prose-li:text-gray-darker prose-li:text-sm sm:prose-li:text-body
-          prose-blockquote:border-l-2 prose-blockquote:border-gray-muted
-          prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:text-gray-dark
-          prose-code:text-xs sm:prose-code:text-small prose-code:bg-gray-muted prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
-          prose-pre:bg-gray-muted prose-pre:border prose-pre:border-gray-muted
-          prose-img:rounded-lg prose-img:shadow-sm"
-        dangerouslySetInnerHTML={{ __html: htmlContent }} 
-      />
+
+      <BlogContent content={post.content} />
       
       <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-gray-muted py-2 pb-12 sm:pb-16">
         <p className="text-sm sm:text-base text-gray-dark mb-3">
