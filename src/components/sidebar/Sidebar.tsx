@@ -98,7 +98,7 @@ const Sidebar = () => {
                     <a
                       key={i}
                       href={link.href}
-                      className="text-gray-darker hover:opacity-80 transition-all duration-200 hover:-translate-y-1"
+                      className="text-gray-darker hover:opacity-80 transition-all duration-200 hover:-translate-y-1 hover:bg-gray-muted rounded-full p-2"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
