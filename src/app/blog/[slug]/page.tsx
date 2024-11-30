@@ -1,6 +1,7 @@
 import { getAllPosts, getPostBySlug } from '@/services/mdx'
 import { notFound } from 'next/navigation'
 import BlogContent from '@/components/blog/BlogContent'
+import Link from 'next/link'
 
 interface BlogPostProps {
   params: {
@@ -19,9 +20,9 @@ export default async function BlogPost({ params }: BlogPostProps) {
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-16 antialiased min-h-screen">
       <nav className="flex items-center space-x-2 mb-6 sm:mb-8 text-xs sm:text-sm sticky top-0 backdrop-blur-sm py-4 z-10">
-        <a href="/blog" className="bg-gray-dark px-2 py-1 rounded-lg text-gray-light truncate max-w-[120px] sm:max-w-[200px] inline-block hover:bg-gray-darker hover:text-gray-light hover:shadow-md transition-all duration-200 font-semibold">
+        <Link href="/blog" className="bg-gray-dark px-2 py-1 rounded-lg text-gray-light truncate max-w-[120px] sm:max-w-[200px] inline-block hover:bg-gray-darker hover:text-gray-light hover:shadow-md transition-all duration-200 font-semibold">
           🖋️ &nbsp;Blog
-        </a>
+        </Link>
         <span className="text-gray-dark">/</span>
         <span className="text-gray-darker truncate max-w-[120px] sm:max-w-[200px] inline-block">{post.title}</span>
       </nav>
@@ -41,16 +42,16 @@ export default async function BlogPost({ params }: BlogPostProps) {
       
       <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-gray-muted py-2 pb-12 sm:pb-16">
         <p className="text-sm sm:text-base text-gray-dark mb-3">
-            Like what you read ? Read more <a href="/blog" className="text-blue">Articles</a>
+            Like what you read ? Read more <Link href="/blog" className="text-blue">Articles</Link>
         </p>
-        <a 
+        <Link 
           href="https://x.com/intent/follow?screen_name=Gautam__Jain&ref_src=twsrc%5Etfw%7Ctwcamp%5Eembeddedtimeline%7Ctwterm%5Escreen-name%3AGautam__Jain%7Ctwcon%5Es2" 
           target="_blank" 
           rel="noopener noreferrer"
           className="text-sm sm:text-base bg-gray-dark text-white px-3 py-1.5 rounded-lg hover:bg-gray-darker hover:shadow-md transition-all duration-200"
         >
           Follow me on X
-        </a>
+        </Link>
       </div>
     </article>
   )
