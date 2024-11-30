@@ -20,3 +20,21 @@ body {
   background: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Add these styles to your global CSS */
+.gist {
+  margin: 1.5rem 0;
+}
+
+.gist-file {
+  border-radius: 0.5rem !important;
+  border: 1px solid var(--gray-muted) !important;
+}
+
+.gist-data {
+  border-radius: 0.5rem !important;
+}
+
+.gist .blob-wrapper {
+  border-radius: 0.5rem !important;
+}
