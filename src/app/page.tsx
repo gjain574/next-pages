@@ -1,6 +1,17 @@
-import Sidebar from "@/components/sidebar/Sidebar";
 import { getAllPosts } from '@/services/mdx';
 import PostCard from '@/components/blog/PostCard';
+import Link from 'next/link';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Gautam Jain - Full-stack Developer & UI/UX Designer',
+  description: 'Full-stack developer and UI/UX designer who loves building products. Experienced with Node.js and React, focusing on Chrome extensions and browser ecosystem.',
+  openGraph: {
+    title: 'Gautam Jain - Full-stack Developer & UI/UX Designer',
+    description: 'Full-stack developer and UI/UX designer who loves building products. Experienced with Node.js and React, focusing on Chrome extensions and browser ecosystem.',
+    type: 'website',
+  },
+};
 
 export default function Home() {
   // Get latest 3 posts
@@ -11,9 +22,9 @@ export default function Home() {
   return (
     <main className="max-w-4xl px-4 sm:px-6 py-8 sm:py-16 antialiased min-h-screen">
       <nav className="flex items-center space-x-2 mb-6 sm:mb-8 text-xs sm:text-sm sticky top-0 backdrop-blur-sm py-4 z-10">
-          <a href="/" className="bg-gray-dark px-2 py-1 rounded-lg text-gray-light truncate max-w-[120px] sm:max-w-[200px] inline-block font-semibold">
+          <Link href="/" className="bg-gray-dark px-2 py-1 rounded-lg text-gray-light truncate max-w-[120px] sm:max-w-[200px] inline-block font-semibold">
           Home
-          </a>
+          </Link>
           <span className="text-gray-darker">/</span>
           <span className="text-gray-darker truncate max-w-[120px] sm:max-w-[200px] inline-block">👋 &nbsp;About Me</span>
       </nav>
@@ -43,13 +54,13 @@ export default function Home() {
         <h3 className="text-body md:text-h3 font-semibold md:font-normal">
           Latest Articles
         </h3>
-        <a 
+        <Link 
             href="/blog" 
             className="text-sm md:text-body text-blue-600 hover:text-blue-700 transition-colors flex items-center space-x-1 group"
           >
             <span>View all posts</span>
             <span className="group-hover:translate-x-0.5 transition-transform">→</span>
-        </a>
+        </Link>
       </div>
 
       <div className="grid gap-6">
