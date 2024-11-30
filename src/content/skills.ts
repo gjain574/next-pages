@@ -137,7 +137,3 @@ export const getSkillsByCategory = (category: keyof CategoryNames) => {
 export const getAllCategories = () => {
   return Object.keys(categoryNames) as (keyof CategoryNames)[];
 };
-
-export const getTopSkills = (count: number = 5) => {
-  return [...skills].sort((a, b) => b.level - a.level).slice(0, count);
-}; 

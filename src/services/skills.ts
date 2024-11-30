@@ -30,15 +30,6 @@ export function getAllSkills(): Skill[] {
 }
 
 /**
- * Gets the top skills based on proficiency level
- */
-export function getTopSkills(limit: number = 5): Skill[] {
-  return [...skills]
-    .sort((a, b) => b.level - a.level)
-    .slice(0, limit)
-}
-
-/**
  * Searches skills by name or description
  */
 export function searchSkills(query: string): Skill[] {
