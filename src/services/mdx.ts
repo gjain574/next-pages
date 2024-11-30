@@ -42,7 +42,8 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
       content,
       ...(data as Omit<BlogPost, 'slug' | 'content'>)
     }
-  } catch (e) {
+  } catch (error) {
+    console.error(`Error fetching post with slug ${slug}:`, error)
     return undefined
   }
 } 

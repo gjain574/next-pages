@@ -16,7 +16,6 @@ export const metadata: Metadata = {
 export default function Home() {
   // Get latest 3 posts
   const latestPosts = getAllPosts()
-    .map(({ content, ...rest }) => rest)
     .slice(0, 3);
 
   return (
