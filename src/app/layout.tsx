@@ -16,8 +16,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <div className="flex min-h-screen">
-          {!isBlogPost && <Sidebar />}
-          <main className={`flex-1 overflow-y-auto h-screen flex flex-col p-2 bg-gray-light ${!isBlogPost ? 'px-4 md:px-24' : 'px-4'}`}>
+          {!isBlogPost && <div className="md:sticky top-0 h-screen" ><Sidebar/></div>}
+          <main className={`flex-1 overflow-y-auto flex flex-col bg-gray-light ${!isBlogPost ? 'px-4 md:px-24' : 'px-4'}`}>
             {children}
           </main>
         </div>
