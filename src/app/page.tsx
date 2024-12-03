@@ -4,10 +4,16 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Gautam Jain - Full-stack Developer & UI/UX Designer',
+  title: 'Gautam Jain',
   description: 'Full-stack developer and UI/UX designer who loves building products. Experienced with Node.js and React, focusing on Chrome extensions and browser ecosystem.',
+  icons: {
+    icon: '/gj.svg',
+    shortcut: '/gj.svg',
+    apple: '/gj.svg'
+  },
   openGraph: {
-    title: 'Gautam Jain - Full-stack Developer & UI/UX Designer',
+    title: 'Gautam Jain - Full-stack Developer & UI/UX Designer', 
+    images: '/gj.svg',
     description: 'Full-stack developer and UI/UX designer who loves building products. Experienced with Node.js and React, focusing on Chrome extensions and browser ecosystem.',
     type: 'website',
   },

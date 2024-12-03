@@ -1,6 +1,23 @@
 import { getAllPosts } from '@/services/mdx'
 import PostCard from '@/components/blog/PostCard'
 import Link from 'next/link'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Blog',
+  description: 'Collection of thoughts and observations, shaped by my experiences across diverse roles - from full-time positions and contract work to trading and investing.',
+  icons: {
+    icon: '/gj.svg',
+    shortcut: '/gj.svg',
+    apple: '/gj.svg'
+  },
+  openGraph: {
+    title: '🖋️ Blog - Gautam Jain', 
+    images: '/gj.svg',
+    description: 'Collection of thoughts and observations, shaped by my experiences across diverse roles - from full-time positions and contract work to trading and investing.',
+    type: 'website',
+  },
+};
 
 export default function BlogIndex() {
   const posts = getAllPosts()

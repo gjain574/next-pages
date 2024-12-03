@@ -1,11 +1,23 @@
 import SkillsSection from '@/components/skills/SkillsSection'
 import { getAllCategories } from '@/services/skills'
 import Link from 'next/link';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Skills 🎨 ⛸️🏓 - Gautam Jain',
-  description: 'Overview of technical skills and expertise'
-}
+export const metadata: Metadata = {
+  title: 'My Skills',
+  description: 'My technical skills and expertise',
+  icons: {
+    icon: '/gj.svg',
+    shortcut: '/gj.svg',
+    apple: '/gj.svg'
+  },
+  openGraph: {
+    title: 'My Skills', 
+    images: '/gj.svg',
+    description: 'My technical skills and expertise',
+    type: 'website',
+  },
+};
 
 export default function SkillsPage() {
   const categories = getAllCategories()

@@ -1,10 +1,22 @@
 import { designProjects } from '@/content/design';
 import DesignGrid from '@/components/design/DesignGrid';
 import Link from 'next/link';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Design | Your Name',
+export const metadata: Metadata = {
+  title: 'Design Projects',
   description: 'Collection of my design work and UI/UX projects',
+  icons: {
+    icon: '/gj.svg',
+    shortcut: '/gj.svg',
+    apple: '/gj.svg'
+  },
+  openGraph: {
+    title: '🎨 Design - Gautam Jain', 
+    images: '/gj.svg',
+    description: 'Collection of my design work and UI/UX projects',
+    type: 'website',
+  },
 };
 
 export default function DesignPage() {
@@ -15,7 +27,7 @@ export default function DesignPage() {
             Home
             </Link>
             <span className="text-gray-darker">/</span>
-            <span className="text-gray-darker truncate max-w-[120px] sm:max-w-[200px] inline-block">👋 &nbsp;Design</span>
+            <span className="text-gray-darker truncate max-w-[120px] sm:max-w-[200px] inline-block">🎨 &nbsp;Design</span>
         </nav>
         <h1 className="text-2xl sm:text-title font-semibold tracking-tight text-gray-darker mb-8">
             Design

@@ -9,6 +9,42 @@ interface BlogPostProps {
   }>
 }
 
+export async function generateMetadata({ params }: BlogPostProps) {
+  const awaitedParams = await params;
+  const post = await getPostBySlug(awaitedParams.slug)
+  
+  if (!post) {
+    return {
+      title: 'Post Not Found',
+    }
+  }
+
+  return {
+    title: post.title,
+    description: post.excerpt,
+    icons: {
+      icon: '/gj.svg',
+      shortcut: '/gj.svg',
+      apple: '/gj.svg'
+    },
+    openGraph: {
+      title: post.title,
+      images: '/gj.svg',
+      description: post.excerpt,
+      type: 'article',
+      publishedTime: post.date,
+    },
+  }
+}
+
+export async function generateStaticParams() {
+  const posts = await getAllPosts()
+  
+  return posts.map((post) => ({
+    slug: post.slug,
+  }))
+} 
+
 export default async function BlogPost({ params }: BlogPostProps) {
   const awaitedParams = await params;
   const post = await getPostBySlug(awaitedParams.slug)
@@ -56,33 +92,3 @@ export default async function BlogPost({ params }: BlogPostProps) {
     </article>
   )
 }
-
-export async function generateMetadata({ params }: BlogPostProps) {
-  const awaitedParams = await params;
-  const post = await getPostBySlug(awaitedParams.slug)
-  
-  if (!post) {
-    return {
-      title: 'Post Not Found',
-    }
-  }
-
-  return {
-    title: post.title,
-    description: post.excerpt,
-    openGraph: {
-      title: post.title,
-      description: post.excerpt,
-      type: 'article',
-      publishedTime: post.date,
-    },
-  }
-}
-
-export async function generateStaticParams() {
-  const posts = await getAllPosts()
-  
-  return posts.map((post) => ({
-    slug: post.slug,
-  }))
-} 

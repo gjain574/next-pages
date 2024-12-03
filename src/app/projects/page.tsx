@@ -1,9 +1,22 @@
 import { projects } from '@/content/projects';
 import ProjectGrid from '@/components/projects/ProjectGrid';
 import Link from 'next/link';
-export const metadata = {
-  title: 'Projects 🛠️ - Gautam Jain',
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Portfolio Projects',
   description: 'Chronological list of projects I have worked on. Consists of Web Apps, Chrome Extensions, and Electron Apps.',
+  icons: {
+    icon: '/gj.svg',
+    shortcut: '/gj.svg',
+    apple: '/gj.svg'
+  },
+  openGraph: {
+    title: 'Portfolio Projects', 
+    images: '/gj.svg',
+    description: 'Chronological list of projects I have worked on. Consists of Web Apps, Chrome Extensions, and Electron Apps.',
+    type: 'website',
+  },
 };
 
 export default function ProjectsPage() {
