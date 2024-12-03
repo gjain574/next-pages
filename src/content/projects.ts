@@ -2,7 +2,6 @@ import { Project } from '@/types/project';
 
 export const projects: Project[] = [
     {
-        id: 'project-0',
         title: 'LinkedIn AI Reply',
         description: 'Your AI LinkedIn Assistant',
         technologies: ['WXT', 'React'],
@@ -13,7 +12,6 @@ export const projects: Project[] = [
         status: 'Offline',
     },
     {
-        id: 'project-1',
         title: 'HN Hiring Pro',
         description: 'Chrome Extension to help you manage your job applications on Who is Hiring Thread',
         technologies: ['WXT', 'React', 'Vanilla JS'],
@@ -24,7 +22,16 @@ export const projects: Project[] = [
         status: 'Online',
     },
     {
-        id: 'project-2',
+        title: 'Next Pages',
+        description: 'Next.js Pages for your blogs, projects, etc.',
+        technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+        imageUrl: 'https://i.ibb.co/T0nLxjv/next-pages.png',
+        liveUrl: 'https://next-pages.jaingautam.com/',
+        githubUrl: 'https://github.com/gjain574/next-pages',
+        date: '2024-01',
+        status: 'Online',
+    },
+    {
         title: 'Lego',
         description: 'Lego is a platform for building and sharing your own Lego sets.',
         technologies: ['React.js', 'React Table'],
@@ -34,7 +41,6 @@ export const projects: Project[] = [
         status: 'Online',
     },
     {
-        id: 'project-3',
         title: 'LystOf',
         description: 'Create and share list of links.',
         technologies: ['React', 'Express', 'ElasticSearch'],
@@ -44,7 +50,6 @@ export const projects: Project[] = [
         status: 'Offline',
     },
     {
-        id: 'project-4',
         title: 'Data Explorer',
         description: 'Data Explorer for viewing, filtering and analyzing datasets in browser.',
         technologies: ['React', 'React Table', 'React Select'],
@@ -54,7 +59,6 @@ export const projects: Project[] = [
         status: 'Online',
     },
     {
-        id: 'project-5',
         title: 'Apply',
         description: 'Personalized Job Applications, Cover Letter and Resume. Learn How to Write a Cover Letter. Explore Tips for writing Powerful Cover Letter.',
         technologies: ['HTML', 'Vanilla JS', 'Tailwind CSS'],
@@ -64,7 +68,6 @@ export const projects: Project[] = [
         status: 'Online',
     },
     {
-        id: 'project-6',
         title: '💡 Wisdom Bar OS X',
         description: 'Get 200+ Wisdom Quotes on Entrepreneurship and Life, right in your Mac-Menu-Bar.',
         technologies: ['Electron', 'React'],
@@ -74,7 +77,6 @@ export const projects: Project[] = [
         status: 'Online',
     },
     {
-        id: 'project-7',
         title: 'Fantasy Golf Bag Dashboard',
         description: 'A data intensive dashboard.',
         technologies: ['React', 'React Table', 'Express'],
@@ -83,7 +85,6 @@ export const projects: Project[] = [
         status: 'Offline',
     },
     {
-        id: 'project-8',
         title: 'Clap Or Slap',
         description: 'Clap or Slap to find products in a fun tinder-y way !',
         technologies: ['React', 'Express', 'ElasticSearch'],
@@ -92,7 +93,6 @@ export const projects: Project[] = [
         status: 'Offline',
     },
     {
-        id: 'project-9',
         title: 'Makers Cafe',
         description: 'Discover Awesome Makers and what are they upto ?',
         technologies: ['React', 'Express', 'ElasticSearch'],
