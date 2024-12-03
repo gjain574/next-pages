@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio & Blog
+
+A modern portfolio website built with Next.js, TypeScript, and Tailwind CSS, showcasing my professional skills, projects, and technical blog posts.
+
+## Project Purpose
+
+This project serves as:
+- A professional portfolio to showcase technical skills and projects
+- A technical blog platform for sharing knowledge and insights
+- A demonstration of modern web development practices
+- A personal brand website
+
+## Tech Stack
+
+- **Framework**: Next.js 14 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Content**: Markdown files for blog posts
+- **Deployment**: [Your deployment platform]
+
+## Project Structure
+
+```
+src/
+├── app/                    # Next.js app router pages
+│   ├── blog/              # Blog section routes
+│   ├── skills/            # Skills showcase routes
+│   ├── portfolio/         # Portfolio section routes
+│   └── page.tsx           # Homepage
+├── components/            # Reusable UI components
+│   ├── blog/             # Blog-specific components
+│   ├── skills/           # Skills-specific components
+│   └── portfolio/        # Portfolio-specific components
+├── content/              # Static content and data
+│   ├── blog/            # Blog post markdown files
+│   ├── skills.ts        # Skills data
+│   └── portfolio.ts     # Portfolio data
+├── services/            # Data fetching and processing
+│   ├── blog.ts         # Blog-related services
+│   └── skills.ts       # Skills-related services
+└── types/              # TypeScript type definitions
+    ├── blog.ts
+    └── skills.ts
+```
+
+## Key Features
+
+- 🎯 **Skills Showcase**: Visual representation of technical skills and proficiency levels
+- 📝 **Technical Blog**: Markdown-based blog posts about technical topics
+- 💼 **Portfolio**: Showcase of projects and professional work
+- 🎨 **Modern Design**: Clean, responsive interface using Tailwind CSS
+- ⚡ **Performance**: Optimized for speed and SEO
+- 📱 **Responsive**: Mobile-first design approach
 
 ## Getting Started
 
-First, run the development server:
-
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [your-repo-url]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## Project Organization
 
-To learn more about Next.js, take a look at the following resources:
+### `/app`
+Contains all the routes and pages using Next.js App Router.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### `/components`
+Reusable UI components organized by feature/section.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### `/content`
+Static content including:
+- Blog posts in markdown format
+- Skills and expertise data
+- Other static content
 
-## Deploy on Vercel
+### `/services`
+Data fetching and processing logic:
+- Blog post retrieval and processing
+- Skills data management
+- Other data-related services
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### `/types`
+TypeScript type definitions for:
+- Blog post structure
+- Skills data
+- Component props
+- Other type definitions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+[Your contribution guidelines if applicable]
+
+## License
+
+[Your chosen license]
+
+## Contact
+
+[Your contact information]
