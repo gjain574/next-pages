@@ -154,7 +154,7 @@ const Sidebar = () => {
             </nav>
 
             {/* Contact Card */}
-            <div className="bg-blue-light p-6 rounded-lg mb-8 shadow-sm">
+            <div className="bg-blue-light p-6 rounded-lg shadow-sm">
               <h3 className="font-semibold mb-3 text-gray-darker text-medium">
                 Contact Me 📧
               </h3>
