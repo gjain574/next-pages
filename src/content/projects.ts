@@ -26,7 +26,7 @@ export const projects: Project[] = [
         description: 'Next.js Pages for your blogs, projects, etc.',
         technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
         imageUrl: 'https://i.ibb.co/T0nLxjv/next-pages.png',
-        liveUrl: 'https://next-pages.jaingautam.com/',
+        liveUrl: 'https://jaingautam.com/',
         githubUrl: 'https://github.com/gjain574/next-pages',
         date: '2024-01',
         status: 'Online',
