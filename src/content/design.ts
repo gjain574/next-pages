@@ -2,6 +2,12 @@ import { DesignProject } from '@/types/design';
 
 export const designProjects: DesignProject[] = [
     {
+      title: 'Prompt2MVP',
+      description: 'Write quick prompts for your MVP on Lovable',
+      image: '/images/design/prompt2mvp.jpg',
+      category: 'Infographic'
+    },
+    {
       title: 'Stockviews.ai',
       description: 'Stock tips from top influencers summarized by AI.',
       image: '/images/design/stock_views_mockup.jpg',
