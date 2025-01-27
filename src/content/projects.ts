@@ -2,6 +2,16 @@ import { Project } from '@/types/project';
 
 export const projects: Project[] = [
     {
+        title: 'Prompt2MVP',
+        description: 'Write quick prompts for your MVP on Lovable',
+        technologies: ['WXT', 'React'],
+        imageUrl: '/images/projects/ecommerce.png',
+        liveUrl: 'https://chromewebstore.google.com/detail/prompt2mvp/dfojilkhdfjdlmhpchfajagmiamindgh?authuser=0&hl=en',
+        videoUrl: "https://www.youtube.com/watch?v=WQIE-iw9aDc",
+        date: '2025-01-27',
+        status: 'Online',
+    },    
+    {
         title: 'LinkedIn AI Reply',
         description: 'Your AI LinkedIn Assistant',
         technologies: ['WXT', 'React'],
