@@ -7,7 +7,7 @@ export const projects: Project[] = [
         technologies: ['WXT', 'React'],
         imageUrl: '/images/projects/ecommerce.png',
         liveUrl: 'https://chromewebstore.google.com/detail/prompt2mvp/dfojilkhdfjdlmhpchfajagmiamindgh?authuser=0&hl=en',
-        videoUrl: "https://www.youtube.com/watch?v=WQIE-iw9aDc",
+        videoUrl: "https://www.youtube.com/embed/WQIE-iw9aDc",
         date: '2025-01-27',
         status: 'Online',
     },    
