@@ -36,7 +36,7 @@ const Stack = () => {
         </h1>
         <div className="prose prose-sm sm:prose-lg max-w-none mb-8 prose-p:text-gray-darker prose-p:leading-relaxed prose-p:text-sm sm:prose-p:text-body">
             <p>
-                Tools I use as a creator.
+                A curated collection of tools and resources I use for content creation, product building, and design. This serves as my personal toolkit and a resource for fellow creators.
             </p>
         </div>
         <div className="overflow-x-auto">
@@ -77,14 +77,6 @@ const Stack = () => {
           </table>
         </div>
     </main>
-    // <div className="min-h-screen">
-    //   <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
-    //     <h1 className="text-4xl font-bold mb-8"></h1>
-    //     <p className="text-lg text-muted-foreground mb-12">
-          
-    //     </p>
-    //   </main>
-    // </div>
   );
 };
 
