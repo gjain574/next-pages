@@ -54,7 +54,8 @@ const Sidebar = () => {
     { href: "/blog", text: "Blog Posts", icon: "🖋️" },
     { href: "/skills", text: "My Skills", icon: "💪" },
     { href: "/projects", text: "Projects", icon: "🛠️" },
-    { href: "/design", text: "Design", icon: "🎨" }
+    { href: "/design", text: "Design", icon: "🎨" },
+    { href: "/creator-stack", text: "Creator Stack", icon: "💡" }
   ];
   
   return (
@@ -78,7 +79,7 @@ const Sidebar = () => {
           <div className="p-8 md:p-12">
             {/* Profile Section */}
             <div className="flex flex-col items-center pt-8 md:pt-4">
-              <div className="flex flex-col items-center mb-8">
+              <div className="flex flex-col items-center mb-6">
                 <Link 
                   href="/" 
                   className="mb-6 transform hover:scale-105 transition-transform duration-200"
@@ -125,7 +126,7 @@ const Sidebar = () => {
                 Full Stack Developer | UI/UX Designer
               </span>
 
-              <p className="text-medium text-gray-dark mb-12 leading-relaxed text-center">
+              <p className="text-medium text-gray-dark mb-8 leading-relaxed text-center">
                 I like building products, mashing datasets. Interests include networks, history, fintech and product design.
               </p>
             </div>
