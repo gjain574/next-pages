@@ -42,5 +42,11 @@ export const creatorStackContent: CreatorStack[] = [
         link: 'https://alexleybourne.github.io/chrome-extension-icon-generator/',
         description: 'Generate icons for your Chrome extensions',
         imageUrl: '/images/creator-stack/extension-icon-generator.png',
+    },
+    {
+        name: 'EzGif',
+        link: 'https://ezgif.com/',
+        description: 'GIF Maker',
+        imageUrl: '/images/creator-stack/ezgif.png',
     }
 ]
