@@ -48,5 +48,11 @@ export const creatorStackContent: CreatorStack[] = [
         link: 'https://ezgif.com/',
         description: 'GIF Maker',
         imageUrl: '/images/creator-stack/ezgif.png',
+    },
+    {
+        name: 'Ray',
+        link: 'https://www.ray.so/',
+        description: 'Code to beautiful snippets',
+        imageUrl: '/images/creator-stack/ray.png',
     }
 ]
