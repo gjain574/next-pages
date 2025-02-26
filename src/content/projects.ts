@@ -2,6 +2,16 @@ import { Project } from '@/types/project';
 
 export const projects: Project[] = [
     {
+        title: 'Use At',
+        description: 'Use At to search with multiple AI and traditional search engines',
+        technologies: ['WXT', 'React'],
+        imageUrl: '/images/projects/ecommerce.png',
+        liveUrl: 'https://chromewebstore.google.com/detail/use-at/dcccegjlioicfpgabhfpdjdddmjecdeg',
+        videoUrl: "https://www.youtube.com/embed/w6qkxn5JSQI",
+        date: '2025-02-26',
+        status: 'Online',
+    },
+    {
         title: 'Prompt2MVP',
         description: 'Write quick prompts for your MVP on Lovable',
         technologies: ['WXT', 'React'],
