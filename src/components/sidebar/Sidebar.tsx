@@ -126,9 +126,9 @@ const Sidebar = () => {
                 Full Stack Developer | UI/UX Designer
               </span>
 
-              <p className="text-medium text-gray-dark mb-8 leading-relaxed text-center">
+              {/* <p className="text-medium text-gray-dark mb-8 leading-relaxed text-center">
                 I like building products, mashing datasets. Interests include networks, history, fintech and product design.
-              </p>
+              </p> */}
             </div>
 
             {/* Navigation Menu */}
