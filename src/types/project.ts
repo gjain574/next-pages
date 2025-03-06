@@ -8,4 +8,5 @@ export interface Project {
   videoUrl?: string;
   date: string;
   status: 'Online' | 'Offline';
+  projectType: string;
 } 

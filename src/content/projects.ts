@@ -10,6 +10,7 @@ export const projects: Project[] = [
         videoUrl: "https://www.youtube.com/embed/w6qkxn5JSQI",
         date: '2025-02-26',
         status: 'Online',
+        projectType: 'Chrome Extension',
     },
     {
         title: 'Prompt2MVP',
@@ -20,6 +21,7 @@ export const projects: Project[] = [
         videoUrl: "https://www.youtube.com/embed/WQIE-iw9aDc",
         date: '2025-01-27',
         status: 'Online',
+        projectType: 'Chrome Extension',
     },    
     {
         title: 'LinkedIn AI Reply',
@@ -30,6 +32,7 @@ export const projects: Project[] = [
         githubUrl: 'https://github.com/gjain574/linkedin-ai-reply',
         date: '2024-01',
         status: 'Offline',
+        projectType: 'Chrome Extension',
     },
     {
         title: 'HN Hiring Pro',
@@ -40,6 +43,7 @@ export const projects: Project[] = [
         videoUrl: 'https://www.youtube.com/embed/nwz88GyAAXY',
         date: '2024-01',
         status: 'Online',
+        projectType: 'Chrome Extension',
     },
     {
         title: 'Next Pages',
@@ -50,6 +54,7 @@ export const projects: Project[] = [
         githubUrl: 'https://github.com/gjain574/next-pages',
         date: '2024-01',
         status: 'Online',
+        projectType: 'Web App',
     },
     {
         title: 'Lego',
@@ -59,15 +64,7 @@ export const projects: Project[] = [
         liveUrl: 'https://lego.jaingautam.com/',
         date: '2024-01',
         status: 'Online',
-    },
-    {
-        title: 'LystOf',
-        description: 'Create and share list of links.',
-        technologies: ['React', 'Express', 'ElasticSearch'],
-        imageUrl: 'https://i.ibb.co/Js5WrBg/image-11.png',
-        liveUrl: 'https://lego.jaingautam.com/',
-        date: '2024-01',
-        status: 'Offline',
+        projectType: 'Web App',
     },
     {
         title: 'Data Explorer',
@@ -77,6 +74,7 @@ export const projects: Project[] = [
         liveUrl: 'https://data.jaingautam.com/',
         date: '2024-01',
         status: 'Online',
+        projectType: 'Web App',
     },
     {
         title: 'Apply',
@@ -86,6 +84,7 @@ export const projects: Project[] = [
         liveUrl: 'https://apply.jaingautam.com/',
         date: '2024-01',
         status: 'Online',
+        projectType: 'Web App',
     },
     {
         title: '💡 Wisdom Bar OS X',
@@ -95,6 +94,16 @@ export const projects: Project[] = [
         liveUrl: 'https://wisdombar.jaingautam.com/',
         date: '2024-01',
         status: 'Online',
+        projectType: 'Electron App',
+    },
+    {
+        title: 'LystOf',
+        description: 'Create and share list of links.',
+        technologies: ['React', 'Express', 'ElasticSearch'],
+        imageUrl: 'https://i.ibb.co/Js5WrBg/image-11.png',
+        date: '2024-01',
+        status: 'Offline',
+        projectType: 'Web App',
     },
     {
         title: 'Fantasy Golf Bag Dashboard',
@@ -103,6 +112,7 @@ export const projects: Project[] = [
         imageUrl: 'https://i.ibb.co/4RZfjcw/image-4.png',
         date: '2024-01',
         status: 'Offline',
+        projectType: 'Web App',
     },
     {
         title: 'Clap Or Slap',
@@ -111,6 +121,7 @@ export const projects: Project[] = [
         imageUrl: 'https://i.ibb.co/zH34qPH/image-10.png',
         date: '2024-01',
         status: 'Offline',
+        projectType: 'Web App',
     },
     {
         title: 'Makers Cafe',
@@ -119,5 +130,6 @@ export const projects: Project[] = [
         imageUrl: 'https://i.ibb.co/fdGwKfS/image-5.png',
         date: '2024-01',
         status: 'Offline',
+        projectType: 'Web App',
     },
 ];
